@@ -67,7 +67,7 @@ const getCats = content => {
 };
 
 // Main processor. Dumps transformed content into STDOUT
-run = async () => {
+const run = async () => {
   const res = await getContent();
 
   const title = getTitle(res.data);
